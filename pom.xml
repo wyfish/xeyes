@@ -342,14 +342,17 @@
     <repositories></repositories>
     -->
 
-    <!-- 代码管理
     <scm>
-        <connection></connection>
-        <developerConnection></developerConnection>
-        <url></url>
+        <connection>scm:git@github.com:wyfish/xeyes.git</connection>
+        <developerConnection>scm:git@github.com:wyfish/xeyes.git</developerConnection>
+        <url>git@github.com:wyfish/xeyes.git</url>
         <tag>HEAD</tag>
     </scm>
-    -->
+
+    <issueManagement>
+        <system>Github Issue</system>
+        <url>https://github.com/wyfish/xeyes/issues</url>
+    </issueManagement>
 
     <!-- 编译、安装、部署等信息  -->
     <build>
