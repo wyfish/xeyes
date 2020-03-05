@@ -4,6 +4,9 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.stereotype.Component;
 
+/**
+ * 该类用于统一指定整个应用配置的起始配置文件路径
+ */
 @Component
 @Setter
 @Getter

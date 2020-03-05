@@ -45,6 +45,7 @@
         <module>xingeyes-boot-bigdata</module>
         <module>xingeyes-boot-admin</module>
         <module>xingeyes-boot-scripts</module>
+        <module>xingeyes-boot-security</module>
     </modules>
 
     <!-- 全局统一三方依赖版本管理 -->
@@ -62,6 +63,11 @@
         <kafka.version>2.4.0.RELEASE</kafka.version>
         <druid-springboot.version>1.1.10</druid-springboot.version>
         <junit.version>4.12</junit.version>
+        <nacos-config.version>0.2.4</nacos-config.version>
+        <dubbo.version>2.7.5</dubbo.version>
+        <nacos.version>1.1.4</nacos.version>
+        <zookeeper.version>3.5.7</zookeeper.version>
+        <shiro-spring.version>1.4.0</shiro-spring.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -126,6 +132,11 @@
             <dependency>
                 <groupId>com.xingeyes.boot</groupId>
                 <artifactId>xingeyes-boot-scripts</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.xingeyes.boot</groupId>
+                <artifactId>xingeyes-boot-security</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <!-- Spring-Boot-Starter 依赖 -->
@@ -245,6 +256,47 @@
                 <groupId>org.springframework.kafka</groupId>
                 <artifactId>spring-kafka</artifactId>
                 <version>${kafka.version}</version>
+            </dependency>
+
+            <!-- Alibaba 相关代码库源依赖 -->
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-config-spring-boot-starter</artifactId>
+                <version>${nacos-config.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-config-spring-boot-autoconfigure</artifactId>
+                <version>${nacos-config.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.nacos</groupId>
+                <artifactId>nacos-client</artifactId>
+                <version>${nacos.version}</version>
+            </dependency>
+
+            <!-- Dubbo 集成Spring-Boot 相关依赖 -->
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>${zookeeper.version}</version>
+            </dependency>
+
+            <!-- Apache Shiro 依赖 -->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring</artifactId>
+                <version>${shiro-spring.version}</version>
             </dependency>
 
         </dependencies>

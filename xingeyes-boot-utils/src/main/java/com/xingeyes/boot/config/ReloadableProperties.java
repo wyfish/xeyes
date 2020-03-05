@@ -10,6 +10,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 
+/**
+ * 用于获取属性文件中的各类属性
+ */
 @Service
 public class ReloadableProperties {
 

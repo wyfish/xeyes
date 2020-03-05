@@ -11,5 +11,7 @@
 
     <artifactId>xingeyes-boot-web</artifactId>
 
+    <dependencies></dependencies>
+
 
 </project>
