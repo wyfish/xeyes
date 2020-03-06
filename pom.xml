@@ -68,6 +68,8 @@
         <nacos.version>1.1.4</nacos.version>
         <zookeeper.version>3.5.7</zookeeper.version>
         <shiro-spring.version>1.4.0</shiro-spring.version>
+        <swagger2.version>2.9.2</swagger2.version>
+        <spring.oauth2.version>2.4.0.RELEASE</spring.oauth2.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -142,6 +144,11 @@
             <!-- Spring-Boot-Starter 依赖 -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-actuator</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-websocket</artifactId>
                 <version>${spring-boot.version}</version>
             </dependency>
@@ -186,6 +193,16 @@
                 <version>${spring-boot.version}</version>
             </dependency>
             <!-- Maven 项目 安全相关工具包依赖 -->
+            <dependency>
+                <groupId>org.springframework.security.oauth</groupId>
+                <artifactId>spring-security-oauth2</artifactId>
+                <version>${spring.oauth2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security.oauth.boot</groupId>
+                <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-oauth2-client</artifactId>
@@ -306,11 +323,6 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-            <version>${spring-boot.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>${spring-boot.version}</version>
         </dependency>
@@ -388,6 +400,17 @@
             <version>${logback.version}</version>
         </dependency>
         <!-- LOG 依赖结束-->
+        <!-- Swagger 2 依赖 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>
     </dependencies>
 
     <!-- 软件仓库信息
