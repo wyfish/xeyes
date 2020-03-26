@@ -1,4 +1,4 @@
-package com.xingeyes.boot.swagger2;
+package com.xingeyes.boot.api.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -22,6 +22,7 @@ public class XMybatisConfig {
 
     /**
      * 注入 SqlSessionFactory 实例，Mybatis核心类
+     * 可以增加其它方法自定义SqlSessionFactory访问
      * @return
      * @throws Exception
      */
@@ -33,7 +34,7 @@ public class XMybatisConfig {
         sessionFactory.setTypeAliasesPackage("com.xingeyes.boot.dbaccess.mybatis.model");    // 扫描Model
 
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        sessionFactory.setMapperLocations(resolver.getResources("classpath*:**/sqlmap/*.xml"));    // 扫描映射文件
+        sessionFactory.setMapperLocations(resolver.getResources("classpath*:**/mapping/*.xml"));    // 扫描映射文件
 
         return sessionFactory.getObject();
     }

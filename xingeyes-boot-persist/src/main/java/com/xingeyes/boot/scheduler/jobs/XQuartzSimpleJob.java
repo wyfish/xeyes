@@ -1,17 +1,22 @@
-package com.xingeyes.boot.scheduler.job.jobs;
+package com.xingeyes.boot.scheduler.jobs;
 
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
-public class XHelloDemoJob implements Job {
+/**
+ *
+ */
+@Component
+public class XQuartzSimpleJob implements Job {
 
     /**
      * 继承 Job 类，表明子类是一个任务（Job 的子类必须存在一个无参构造。）
      */
-    public XHelloDemoJob(){}
+    public XQuartzSimpleJob(){}
 
     /**
      * 需要实现的接口，
@@ -20,6 +25,7 @@ public class XHelloDemoJob implements Job {
      */
     @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
-        System.out.println("Hello执行：" + LocalDateTime.now());
+        // TODO:
+        System.out.println("执行：" + LocalDateTime.now());
     }
 }

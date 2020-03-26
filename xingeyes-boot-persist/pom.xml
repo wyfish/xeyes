@@ -12,6 +12,20 @@
     <artifactId>xingeyes-boot-persist</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>com.xingeyes.boot</groupId>
+            <artifactId>xingeyes-boot-utils</artifactId>
+        </dependency>
+        <!-- Quartz 指定定时调度工具包依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-quartz</artifactId>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.quartz-scheduler</groupId>-->
+<!--            <artifactId>quartz</artifactId>-->
+<!--            <version>2.3.1</version>-->
+<!--        </dependency>-->
         <!-- 实现方式1： Spring-Boot JPA -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -32,10 +46,16 @@
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
+        <!-- Alibaba Druid 相关连接依赖 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

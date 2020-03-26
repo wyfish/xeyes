@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>xingeyes-boot</artifactId>
+        <groupId>com.xingeyes.boot</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>xingeyes-boot-api</artifactId>
+
+    <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>com.xingeyes.boot</groupId>-->
+<!--            <artifactId>xingeyes-boot-utils</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.xingeyes.boot</groupId>-->
+<!--            <artifactId>xingeyes-boot-service</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.xingeyes.boot</groupId>-->
+<!--            <artifactId>xingeyes-boot-core</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.xingeyes.boot</groupId>-->
+<!--            <artifactId>xingeyes-boot-persist</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.xingeyes.boot</groupId>-->
+<!--            <artifactId>xingeyes-boot-security</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- Swagger Dependency -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
