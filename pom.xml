@@ -58,7 +58,7 @@
         <slf4j.version>1.7.25</slf4j.version>
         <logback.version>1.2.3</logback.version>
         <fastjson.version>1.2.61</fastjson.version>
-        <mysql.jdbc.version>8.0.19</mysql.jdbc.version>
+        <mysql.jdbc.version>8.0.28</mysql.jdbc.version>
         <mybatis.version>2.1.1</mybatis.version>
         <kafka.version>2.4.0</kafka.version>
         <spring.kafka.version>2.4.0.RELEASE</spring.kafka.version>
